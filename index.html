@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.13.0/css/all.css" />
+  
+  <style>
+  /* Note: Try to remove the following lines to see the effect of CSS positioning */
+  .affix {
+    top: 0;
+    width: 100%;
+    z-index: 9999 !important;
+  }
+
+  .container-fluid{
+padding: 0px;
+  }
+  .navbar{
+    border-radius: 0;
+    background: #fff;
+    height: 70px;
+    margin-bottom: 0px;
+  }
+
+  .affix + .container-fluid {
+    padding-top: 70px;
+  }
+  .top-bar {
+    background:#316DC3 !important;
+    color: #fff;
+    height: 48px;
+  }
+  .news-ticker{
+    background: #316DC3;
+  }
+  ul li{
+    list-style: none;
+    display: inline-block;
+  }
+  .carousel-inner img {
+      width: 100%;
+      height: 100%;
+  }
+i {
+margin: 12px;
+}
+  .top-news{
+    margin: 12px 0;
+  }
+  .donation-btn a {
+    display: inline-block;
+    background: #fff;
+    color: #316DC3;
+    padding: 4px;
+    margin-top: 3%;
+    text-decoration: none;
+  }
+  .navbar-brand img{
+    max-height: 52px;
+  }
+  .navbar-brand {
+padding-top:  10px !important;
+}
+.nav {
+  margin-top: 10px;
+}
+.active{
+  background: #316DC3 !important;
+  border-radius: 30px;
+}
+.active a{
+  color:#fff !important;
+}
+
+.nav li a:hover, a:focus{
+  background: #316DC3 !important;
+  border-radius: 30px;
+  color:#fff;
+}
+
+.navbar-nav>li a{
+ padding: 10px 15px; 
+}
+
+
+.accomplishments{
+  background: #2755e9;
+}
+.intro{
+  color: #316dc3;
+}
+.duction{
+  color:#00FF00 ;
+}
+
+.counter {
+    padding: 20px 0;
+    border-radius: 5px;
+}
+
+
+.count-title {
+    font-size: 28px;
+    font-weight: normal;
+    margin-top: 10px;
+    margin-bottom: 0;
+    text-align: center;
+    color: #FFF;
+    font-family: Times New;
+}
+
+.works {
+    font-size: 14px;
+    font-weight: normal;
+    margin-top: 10px;
+    margin-bottom: 0;
+    text-align: center;
+    color: #316dc3;
+    font-family: Times New;
+}
+
+
+.count-text {
+    font-size: 18px;
+    font-weight: normal;
+    margin-top: 10px;
+    margin-bottom: 0;
+    text-align: center;
+    color: #FFF;
+    font-family: Times New;
+}
+
+.fa-2x {
+    margin: 0 auto;
+    float: none;
+    display: table;
+    color: #4ad1e5;
+}
+.work-box{
+  padding: 30px 0;
+  margin: 10px 0;
+  -webkit-box-shadow: 0px -1px 15px 2px rgba(161,161,161,1);
+-moz-box-shadow: 0px -1px 15px 2px rgba(161,161,161,1);
+box-shadow: 0px -1px 15px 2px rgba(161,161,161,1);
+}
+.media-left{
+  display: table-cell;
+  float: left;
+  vertical-align: top;
+}
+.mission{
+  padding: 15px;
+  margin: 5px;
+  background: #f7f8fa;
+}
+.gallery img{
+  width:150px;
+}
+footer{
+  background: #25272e;
+}
+</style>
+</head>
+<body>
+
+<div class="top-bar">
+  <div class="container">
+      <div class="col-md-3">
+        <ul>
+          <li><i class="fab fa-facebook-f"></i></li>
+          <li><i class="fab fa-twitter"></i></li>
+          <li><i class="fab fa-instagram"></i></li>
+          <li><i class="fab fa-youtube"></i></li>
+        </ul>
+      </div>
+      <div class="col-md-6">
+        <div class="top-news">
+          <span>Millions of people's life has changed, millions more awaiting your donation</span>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="donation-btn">
+        <a href="#">UK Donor</a>
+        <a href="#">Donate Now</a>
+        <a href="#">SMIT Result</a>
+      </div>
+      </div>
+    </div>
+    
+</div>
+
+<nav class="navbar" data-spy="affix" data-offset-top="197">
+<div class="container">
+
+  <a class="navbar-brand" href="#">
+    <img src="images/Saylani-logo.png" alt="">
+  </a>
+
+  <ul class="nav navbar-nav navbar-right">
+    <li class="active"><a href="#">Home</a></li>
+    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">About<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Page 1-1</a></li>
+          <li><a href="#">Page 1-2</a></li>
+          <li><a href="#">Page 1-3</a></li>
+        </ul>
+    </li>
+    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Saylani Services<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Page 1-1</a></li>
+          <li><a href="#">Page 1-2</a></li>
+          <li><a href="#">Page 1-3</a></li>
+        </ul>
+    </li>
+    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Future Project<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Page 1-1</a></li>
+          <li><a href="#">Page 1-2</a></li>
+          <li><a href="#">Page 1-3</a></li>
+        </ul>
+    </li>
+    <li><a href="#">Media</a></li>
+    <li><a href="#">News</a></li>
+    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Donation<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Page 1-1</a></li>
+          <li><a href="#">Page 1-2</a></li>
+          <li><a href="#">Page 1-3</a></li>
+        </ul>
+    </li>
+  </ul>
+</div>
+</nav>
+
+
+
+<div class="container-fluid">
+
+
+
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      <div class="item active">
+        <img src="images/slider/slider1.png" alt="Chicago" style="width:100%;">
+      </div>
+    
+      <div class="item">
+        <img src="images/slider/slider2.png" alt="New york" style="width:100%;">
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+
+
+</div>
+
+<div class="container-fluid">
+  <div class="news-ticker">
+<marquee direction="left" scrollamount="6" onmouseover="this.stop();" onmouseout="this.start();">
+                            <font color="#00FF00">(News-1 Dated:15-06-2019)<font color="#FFFFFF">&nbsp;&nbsp;PIAICNext Phase Admission in Islamabad And Faisalabad" . <a href="https://www.facebook.com/saylaniwelfare/photos/a.258515937507690/3441173892575196/?type=3&amp;theater" style="color: blue">More Details</a> &nbsp;&nbsp;
+                            <font color="#00FF00">(News-2 Dated:15-05-2019)<font color="#FFFFFF">&nbsp;&nbsp;Saylani Welfare Announced "Donation Application" . <a href="https://web.facebook.com/saylaniwelfare/photos/a.258515937507690/3332489120110341/?type=3&amp;theater" style="color: blue">More Details</a> &nbsp;&nbsp;
+                            <font color="#00FF00">(News-3 Dated:07-05-2019)<font color="#FFFFFF">&nbsp;&nbsp;Alhamdulillah Saylani Organized 200+ Locations For Iftar And Sehri In This Holy Month . <a href="https://www.facebook.com/saylaniwelfare/?type=3&amp;theater" style="color: blue">More Details</a> &nbsp;&nbsp;
+                            <font color="#00FF00">(News-4 Dated:08-03-2019)<font color="#FFFFFF">&nbsp;&nbsp;Saylani Welfare Distributing Ration &amp; Clothes to affected people of Balochistan. <a href="https://www.facebook.com/saylaniwelfare/posts/3164679946891260?__tn__=-R" style="color: blue">More Details</a> &nbsp;&nbsp;
+                            <font color="#00FF00">(News-5 Dated:25-02-2019)<font color="#FFFFFF">&nbsp;&nbsp;PIAIC Entrance Exam Merit Ranking List Announced. <a href="https://www.facebook.com/saylaniwelfare/photos/a.258515937507690/3135220066503915/?type=3&amp;theater>" style="color: blue">More Details</a>&nbsp;&nbsp;
+                            <font color="#00FF00">(News-6 Dated:23-02-2019)<font color="#FFFFFF">&nbsp;&nbsp;President of Pakistan (Dr. Arif Alvi) Visited Saylani Welfare International Trust HeadOffice Karachi. <a href="https://www.facebook.com/saylaniwelfare/posts/3135103563182232?__xts__[0]=68.ARD9PTgM3DL_2vvulRqQ-b25KUD2P8X7TSS9g6gbxDfRdIBqgjNGJffSbV0ZcFmUFF5Ocrn-wvtpvDbjWBQxq0UHTlRJR1vEkgUOfm8Vk0ltcQp9K5q268QBcUMjujlPyCnBIxXcbe_Qjqbw1DXfCLQ1fFwBdGk77ndYxRXPrUVHrYybrBb5jWxu8GJQ37RpI7LLayc6xkve6gO149Ud-NWv_eF72blzToVI2fZW2ZWJUlRFSgWFK5jgrDGcsP-I7NBis9UXNfBBb55nXahKzJHvloneJh93hN9Wc3bIyvpn7v1IJSixyqcGRr_KHC-mO46gL9JUYx_acVfGdQDLUCBORw&amp;__tn__=-R>" style="color: blue">More Details</a> &nbsp;&nbsp;                    
+                            <font color="#00FF00">(News-7 Dated:19-02-2019)<font color="#FFFFFF">&nbsp;&nbsp;Dr Jamil Ahmed (Additional Inspector General of Police) &amp; Atiqmir Visit Saylani Welfare International Trust, Saylani Mass I.T. Training. <a href="https://www.facebook.com/saylaniwelfare/posts/3124996217526300?__xts__[0]=68.ARCElwXqFXBXobZcA_UIl5WsTnqek6hA0692UZgzLiTQcX71VvEVoMgzqDV_LCU8l4vgjmKHex8j5abeGcQPzz-0Vo7g8gNqrP0CK04uhT29KI7ZBXw7L0UhSE9vpr7JOS4591gwSiYhmPbI_exl5O0PUbYyqzRyVjDhZf833fadxaHMxR3LURDcRfhfFRurM3x6cKNgZ7XwQi2vP6tA2-XS4HUzYNRUfZ5Yc4iUJAwXHOGi64EA62Drmy5c0mv0CZumqreWzE6JGBGOlQC5dMh7k07-qNBGwItqzarzu8CiNWC9kZMwzYyExhOY7JKF76U1ZzEbClh6A-yQYJ-qY1jbYQ&amp;__tn__=-R>" style="color: blue">More Details</a> &nbsp;&nbsp;     
+                        </font></font></font></font></font></font></font></font></font></font></font></font></font></font></marquee>
+  </div>
+</div>
+
+<div class="container">
+  <section id="about">
+        <div class="container">
+            <div class="section-title text-center">
+                <div class="row">
+                    <div class="col-md-10 col-md-offset-1">
+                        <h2 class="intro">Intro<span style="color:#427900 !important">duction</span></h2>
+                        <div class="title-icon">
+                            <img src="images/favicon.png" style="height: 40px;">
+                        </div>
+
+                        <div class="mt-15 show_more text-left" style="line-height: 1.9;">
+
+                            <p class="wow fadeInRightBig" style="text-align: justify; visibility: visible;">Established in May 1999 by famous spiritual and religious scholar Maulana Bashir Ahmed Farooqui, Saylani
+                                Welfare International Trust was built on the fundamentals of breaking the cycle of poverty, alleviating the financial
+                                troubles of the poor, giving people a chance to live a dignified life and spreading happiness.
+                                <br>
+                                <br>
+                                We are an organization that believes in lighting up the lives of underprivileged people across the world. We
+                                endeavor to provide the best quality services in areas including food, education, medical and social welfare free
+                                of cost to people living in the dark. With over 60 different sectors, we feed thousands of hungry people each day,
+                                hundreds more are given the hope of life through medical health care, many are educated to become leaders of
+                                tomorrow and several are given the opportunity to stand on their feet financially.
+                                <br>
+                                <br>
+                                Today, we are proud to say that our physical presence extends throughout Pakistan with a vast network of 125
+                                branches operating in major cities including Karachi, Lahore, Islamabad, Rawalpindi, Hyderabad and
+                                Faisalabad. Apart from Pakistan, we have overseas offices in the UK, USA and UAE as well. Our worldwide
+                                branches are operating under the guidance of a team of over 2,000 working professionals who help almost
+                                125,000 people on a daily basis.
+                                <br>
+                                <br>
+                                We strongly believe that a little help goes a long way and our work would not be possible without the generous
+                                support of our valuable donors. Our local and international donors have graciously lent us a hand by supporting
+                                our causes and enabling us to serve the needs of people in need.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+  </div>
+
+<div class="container-fluid accomplishments">
+
+    <div class="row text-center">
+          <div class="col-md-3">
+          <div class="counter">
+      <img src="images/icons/icon_food_png.png" style="height: 40px;">
+      <h2 class="timer count-title count-number" data-to="100" data-speed="1500"></h2>
+       <p class="count-text ">DAILY DASTARKHAN<span class="duction">(MONTHLY)</span></p>
+    </div>
+          </div>
+              <div class="col-md-3">
+               <div class="counter">
+      <img src="images/icons/icon_family_png.png" style="height: 40px;">
+      <h2 class="timer count-title count-number" data-to="1700" data-speed="1500"></h2>
+      <p class="count-text ">FAMILY ADOPTION<span class="duction">(MONTHLY)</span></p>
+    </div>
+              </div>
+              <div class="col-md-3">
+                  <div class="counter">
+      <img src="images/icons/icon_medical_png.png" style="height: 40px;">
+      <h2 class="timer count-title count-number" data-to="11900" data-speed="1500"></h2>
+      <p class="count-text ">MEDICAL<span class="duction">(MONTHLY)</span></p>
+    </div></div>
+              <div class="col-md-3">
+              <div class="counter">
+      <img src="images/icons/icon_education_png.png" style="height: 40px;">
+      <h2 class="timer count-title count-number" data-to="157" data-speed="1500"></h2>
+      <p class="count-text ">EDUCATION<span class="duction">(MONTHLY)</span></p>
+    </div>
+              </div>
+         </div>
+</div>
+
+<div class="container">
+  <section id="about">
+        <div class="container">
+            <div class="section-title text-center">
+                <div class="row">
+                    <div class="col-md-10 col-md-offset-1">
+                        <h2 class="intro">What we <span style="color:#427900 !important">are dong?</span></h2>
+                        <div class="title-icon">
+                            <img src="images/favicon.png" style="height: 40px;">
+                        </div>
+
+                        <div class="row">
+                          <div class="col-lg-4">
+                            <div class="work-box">
+                            <img src="images/icons/onlinesadqah.png" width="70">
+                            <h1 class="works">ONLINE SADQAH</h1>
+                            </div>
+                          </div>  
+                          <div class="col-lg-4">
+                            <div class="work-box">
+                            <img src="images/icons/welfare.png" width="70">
+                            <h1 class="works">WELFARE</h1>
+                            </div>
+                          </div>  
+                          <div class="col-lg-4">
+                            <div class="work-box">
+                            <img src="images/icons/medical.png" width="70">
+                            <h1 class="works">MEDICAL</h1>
+                            </div>
+                          </div>  
+                          <div class="col-lg-4">
+                            <div class="work-box">
+                            <img src="images/icons/Dastarkhwan.png" width="70">
+                            <h1 class="works">DASTARKHAN</h1>
+                            </div>
+                          </div>  
+                          <div class="col-lg-4">
+                            <div class="work-box">
+                            <img src="images/icons/ROPLANT.png" width="70">
+                            <h1 class="works">RO PLANT</h1>
+                            </div>
+                          </div>  
+                          <div class="col-lg-4">
+                            <div class="work-box">
+                            <img src="images/icons/education.png" width="70">
+                            <h1 class="works">EDUCATION</h1>
+                            </div>
+                          </div>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+  </div>
+
+<div class="container">
+  <div class="col-lg-8">
+    <h3 class="intro">MISSION AND UPCOMMING PROJECTS</h3>
+    <div class="row">
+      <div class="col-md-5 mission">
+        <div class="media-left">
+        <img src="images/icons/Hepatitis.png">
+        </div>
+       <div class="media-left">
+        <span class="intro">HEPATITIS</span>
+        </div> 
+      </div>
+      <div class="col-md-5 mission">
+        <div class="media-left">
+          <img src="images/icons/housing.png">
+          </div>
+         <div class="media-left">
+        <span class="intro">HOUSING</span>
+        </div> 
+      </div>
+      <div class="col-md-5 mission">
+        <div class="media-left">
+          <img src="images/icons/IT.png">
+          </div>
+         <div class="media-left">
+        <span class="intro">IT LITERACY</span>
+        </div> 
+      </div>
+      <div class="col-md-5 mission">
+        <div class="media-left">
+          <img src="images/icons/tharparkar.png">
+          </div>
+         <div class="media-left">
+        <span class="intro">THARPARKAR</span>
+        </div> 
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-4">
+    <h1 class="intro">Upcoming Events</h1>
+    <hr>
+    <p>
+
+                                <marquee direction="up" width="250" height="200" scrollamount="2" onmouseover="this.stop();" onmouseout="this.start();">
+                                    Saylani Welfare Distributing Ration &amp; Clothes to affected people of Balochistan .<a href="https://www.facebook.com/saylaniwelfare/posts/3164679946891260?__tn__=-R" style="color: blue">More Details</a> <br><br>
+                                    Entry Test Accouncement (Graphic Designing &amp; Video Editing/Animation Course) On Sunday 3rd March 2019 @ 11:00Am Vanue: 4rh Floor, Saylani Welfare International Trust HeadOffice Bahadurabad .<a href="https://www.facebook.com/saylaniwelfare/photos/a.258515937507690/3152781434747778/?type=3&amp;theater>" style="color: blue">More Details</a> <br><br>
+                                    Dr Jamil Ahmed (Additional Inspector General of Police) &amp; Atiqmir Visit Saylani Welfare International Trust, Saylani Mass I.T. Training .<a href="https://www.facebook.com/saylaniwelfare/posts/3124996217526300?__xts__[0]=68.ARCElwXqFXBXobZcA_UIl5WsTnqek6hA0692UZgzLiTQcX71VvEVoMgzqDV_LCU8l4vgjmKHex8j5abeGcQPzz-0Vo7g8gNqrP0CK04uhT29KI7ZBXw7L0UhSE9vpr7JOS4591gwSiYhmPbI_exl5O0PUbYyqzRyVjDhZf833fadxaHMxR3LURDcRfhfFRurM3x6cKNgZ7XwQi2vP6tA2-XS4HUzYNRUfZ5Yc4iUJAwXHOGi64EA62Drmy5c0mv0CZumqreWzE6JGBGOlQC5dMh7k07-qNBGwItqzarzu8CiNWC9kZMwzYyExhOY7JKF76U1ZzEbClh6A-yQYJ-qY1jbYQ&amp;__tn__=-R>" style="color: blue">More Details</a>   <br><br> 
+                                    PIAIC Entrance Exam Merit Ranking List Announced.<a href="https://www.saylaniwelfare.com/result" style="color: blue">More Details</a>  <br><br> President of Pakistan (Dr. Arif Alvi) Visited Saylani Welfare International Trust HeadOffice Karachi. <a href="https://www.facebook.com/saylaniwelfare/posts/3135103563182232?__xts__[0]=68.ARD9PTgM3DL_2vvulRqQ-b25KUD2P8X7TSS9g6gbxDfRdIBqgjNGJffSbV0ZcFmUFF5Ocrn-wvtpvDbjWBQxq0UHTlRJR1vEkgUOfm8Vk0ltcQp9K5q268QBcUMjujlPyCnBIxXcbe_Qjqbw1DXfCLQ1fFwBdGk77ndYxRXPrUVHrYybrBb5jWxu8GJQ37RpI7LLayc6xkve6gO149Ud-NWv_eF72blzToVI2fZW2ZWJUlRFSgWFK5jgrDGcsP-I7NBis9UXNfBBb55nXahKzJHvloneJh93hN9Wc3bIyvpn7v1IJSixyqcGRr_KHC-mO46gL9JUYx_acVfGdQDLUCBORw&amp;__tn__=-R>" style="color: blue">More Details</a>                    
+                                </marquee>
+
+                        </p>
+  </div>
+</div>
+
+<div class="container">
+  <section id="about">
+        <div class="container">
+            <div class="section-title text-center">
+                <div class="row">
+                    <div class="col-md-10 col-md-offset-1">
+                        <h2 class="intro">Image <span style="color:#427900 !important">Gallery</span></h2>
+                        <div class="title-icon">
+                            <img src="images/favicon.png" style="height: 40px;">
+                        </div>
+
+                          
+                            <div class="col-md-2 gallery">
+                              <img src="images/gallery/food.jpg">
+                            </div> 
+                            <div class="col-md-2 gallery">
+                              <img src="images/gallery/hazrat.jpg">
+                            </div> 
+                            <div class="col-md-2 gallery">
+                              <img src="images/gallery/hazrat2.jpg">
+                            </div> 
+                            <div class="col-md-2 gallery">
+                              <img src="images/gallery/rashan2.jpg">
+                            </div> 
+                            <div class="col-md-2 gallery">
+                              <img src="images/gallery/food.jpg">
+                            </div> 
+                            <div class="col-md-2 gallery">
+                              <img src="images/gallery/hazrat.jpg">
+                            </div>
+                        
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+  </div>
+<footer>
+<div class="container">
+  <div class="col-md-4">
+    <div class="widget dark" style="color: #bbb;">
+                    <img class="mb-20" alt="" src="images/Saylani-logo.png " height="70">
+                    <p>Head Office,
+                        <br> A-25, Bahadurabad Chowrangi
+                        Karachi, Pakistan </p>
+                    <ul class="list-inline mt-5">
+                        <li class="m-0 pl-10 pr-10"> <i class="fa fa-phone text-theme-colored mr-5"></i>UAN: 111-729-526  </li>
+                        <li class="m-0 pl-10 pr-10"> <i class="fa fa-globe text-theme-colored mr-5"></i>(+0092-213) 4130786-90</li>
+                        <li class="m-0 pl-10 pr-10"> <i class="fa fa-phone text-theme-colored mr-5"></i>CELL: 92-311-1729526</li>
+                        <li class="m-0 pl-10 pr-10"> <i class="fa fa-phone text-theme-colored mr-5"></i>USA NO +1(716)941 7792 </li>
+                        <li class="m-0 pl-10 pr-10"> <i class="fa fa-phone text-theme-colored mr-5"></i>UK NO (+44)115 970 6256 </li>
+                        <li class="m-0 pl-10 pr-10"> <i class="fa fa-envelope-o text-theme-colored mr-5"></i>  info@saylaniwelfare.com</li>
+                    </ul>
+                </div>
+
+  </div>
+  <div class="col-md-4">
+    <h3 class="count-text">Useful Links</h3>
+  </div>
+  <div class="col-md-4">
+    <h3 class="count-text">Connect With Us</h3>
+    <ul class="styled-icons icon-dark icon-theme-colored icon-circled icon-sm">
+                        <li><a href="https://www.facebook.com/pg/saylaniwelfare" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="https://twitter.com/OfficialSwit" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="https://www.instagram.com/saylaniwelfare/" target="_blank"><i class="fab fa-instagram text-white"></i></a></li>
+                                <li><a href="https://www.youtube.com/c/SaylaniWelfareTrustOfficialPage" target="_blank"><i class="fab fa-youtube text-white"></i></a></li>
+                    </ul>
+  </div>
+  
+</div>
+<div class="container-fluid">
+   <div class="news-ticker" style="height: 30px; color: white; line-height: 30px;">
+    <div class="container">
+    Copyright @ 2020 Saylani Welfare
+    </div>
+   </div>
+</div>
+</footer>
+<script type="text/javascript">
+  (function ($) {
+  $.fn.countTo = function (options) {
+    options = options || {};
+    
+    return $(this).each(function () {
+      // set options for current element
+      var settings = $.extend({}, $.fn.countTo.defaults, {
+        from:            $(this).data('from'),
+        to:              $(this).data('to'),
+        speed:           $(this).data('speed'),
+        refreshInterval: $(this).data('refresh-interval'),
+        decimals:        $(this).data('decimals')
+      }, options);
+      
+      // how many times to update the value, and how much to increment the value on each update
+      var loops = Math.ceil(settings.speed / settings.refreshInterval),
+        increment = (settings.to - settings.from) / loops;
+      
+      // references & variables that will change with each update
+      var self = this,
+        $self = $(this),
+        loopCount = 0,
+        value = settings.from,
+        data = $self.data('countTo') || {};
+      
+      $self.data('countTo', data);
+      
+      // if an existing interval can be found, clear it first
+      if (data.interval) {
+        clearInterval(data.interval);
+      }
+      data.interval = setInterval(updateTimer, settings.refreshInterval);
+      
+      // initialize the element with the starting value
+      render(value);
+      
+      function updateTimer() {
+        value += increment;
+        loopCount++;
+        
+        render(value);
+        
+        if (typeof(settings.onUpdate) == 'function') {
+          settings.onUpdate.call(self, value);
+        }
+        
+        if (loopCount >= loops) {
+          // remove the interval
+          $self.removeData('countTo');
+          clearInterval(data.interval);
+          value = settings.to;
+          
+          if (typeof(settings.onComplete) == 'function') {
+            settings.onComplete.call(self, value);
+          }
+        }
+      }
+      
+      function render(value) {
+        var formattedValue = settings.formatter.call(self, value, settings);
+        $self.html(formattedValue);
+      }
+    });
+  };
+  
+  $.fn.countTo.defaults = {
+    from: 0,               // the number the element should start at
+    to: 0,                 // the number the element should end at
+    speed: 1000,           // how long it should take to count between the target numbers
+    refreshInterval: 100,  // how often the element should be updated
+    decimals: 0,           // the number of decimal places to show
+    formatter: formatter,  // handler for formatting the value before rendering
+    onUpdate: null,        // callback method for every time the element is updated
+    onComplete: null       // callback method for when the element finishes updating
+  };
+  
+  function formatter(value, settings) {
+    return value.toFixed(settings.decimals);
+  }
+}(jQuery));
+
+jQuery(function ($) {
+  // custom formatting example
+  $('.count-number').data('countToOptions', {
+  formatter: function (value, options) {
+    return value.toFixed(options.decimals).replace(/\B(?=(?:\d{3})+(?!\d))/g, ',');
+  }
+  });
+  
+  // start all the timers
+  $('.timer').each(count);  
+  
+  function count(options) {
+  var $this = $(this);
+  options = $.extend({}, options || {}, $this.data('countToOptions') || {});
+  $this.countTo(options);
+  }
+});
+</script>
+</body>
+</html>
